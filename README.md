@@ -51,8 +51,13 @@ As telas foram projetadas com **Bootstrap** para garantir:
  ┣ 📜 produtos.html # Cadastro de Produto
  ┣ 📜 vendas.html   # Lançar Venda
  ┣ 📜 README.md     # Documentação do projeto
+ ```
+
+
 
  ---
+
+
 
 👨‍💻 **Autor:** Jefferson Alionco  
 🎓 **Atividade Acadêmica:** Desenvolvimento de Interfaces Web Responsivas  
