@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Unipar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mais opções
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./clientes.html">Clientes</a></li>
+                            <li><a class="dropdown-item" href="./produtos.html">Produtos</a></li>
+                            <li><a class="dropdown-item" href="./lancar.html">Lançar Vendas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-5">
+        <form class="row g-3">
+            <h4>Lançar Venda</h4>
+
+            <!-- Cliente -->
+            <div class="col-md-6">
+                <label for="inputCliente" class="form-label">Cliente</label>
+                <select id="inputCliente" class="form-select" required>
+                    <option value="">Selecione o cliente...</option>
+                    <option value="1">João da Silva</option>
+                    <option value="2">Maria Oliveira</option>
+                    <option value="3">Carlos Souza</option>
+                </select>
+            </div>
+
+            <!-- Produto -->
+            <div class="col-md-6">
+                <label for="inputProduto" class="form-label">Produto</label>
+                <select id="inputProduto" class="form-select" required>
+                    <option value="">Selecione o produto...</option>
+                    <option value="p1">Arroz 5kg</option>
+                    <option value="p2">Feijão 1kg</option>
+                    <option value="p3">Refrigerante 2L</option>
+                </select>
+            </div>
+
+            <!-- Quantidade -->
+            <div class="col-md-4">
+                <label for="inputQtd" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="inputQtd" value="1" min="1" required>
+            </div>
+
+            <!-- Valor unitário -->
+            <div class="col-md-4">
+                <label for="inputValorUnit" class="form-label">Valor Unitário (R$)</label>
+                <input type="number" class="form-control" id="inputValorUnit" step="0.01" placeholder="0.00" required>
+            </div>
+
+            <!-- Total -->
+            <div class="col-md-4">
+                <label for="inputTotal" class="form-label">Total (R$)</label>
+                <input type="number" class="form-control" id="inputTotal" step="0.01" placeholder="0.00" readonly>
+            </div>
+
+            <!-- Data da Venda -->
+            <div class="col-md-6">
+                <label for="inputData" class="form-label">Data da Venda</label>
+                <input type="date" class="form-control" id="inputData" required>
+            </div>
+
+            <!-- Observações -->
+            <div class="col-md-12">
+                <label for="inputObs" class="form-label">Observações</label>
+                <textarea class="form-control" id="inputObs" rows="3"
+                    placeholder="Digite observações adicionais..."></textarea>
+            </div>
+
+            <!-- Botões -->
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-success">
+                    <i class="bi bi-cart-check"></i> Confirmar Venda
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                    <i class="bi bi-x-circle"></i> Cancelar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
